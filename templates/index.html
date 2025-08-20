@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Marketing Generator</title>
+</head>
+<body>
+    <h1>Generate Your Marketing Ad</h1>
+    <form method="post">
+        <label>Business Type:</label><br>
+        <input type="text" name="business" required><br><br>
+
+        <label>Product/Service:</label><br>
+        <input type="text" name="product" required><br><br>
+
+        <label>Target Audience:</label><br>
+        <input type="text" name="audience" required><br><br>
+
+        <button type="submit">Generate Ad</button>
+    </form>
+
+    {% if ad %}
+        <h2>Your AI-Generated Ad:</h2>
+        <p>{{ ad }}</p>
+    {% endif %}
+</body>
+</html>
